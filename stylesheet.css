@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url(fonts/Quattrocento_Sans/QuattrocentoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url(fonts/Quattrocento_Sans/QuattrocentoSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Alata";
+    src: url(fonts/Alata/Alata-Regular.ttf);
+}
+
+body {
+    font-family: 'Quattrocento Sans';
+    background-color: #E4E9FF;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Alata';
+}
+
+h2 {
+    margin-top: 3vh;
+    font-family: 'Alata';
+    text-align: center;
+}
+
+h2 span {
+    padding: 1vh 2vw;
+    border-radius: 10px;
+    background-color: #000C4A;
+    color: #FFFFFF;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Alata';
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Alata';
+    font-size: large;
+}
+
+#intro {
+    text-align: center;
+}
+
+#initial-website {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro {
+    margin: 0vh 10vw;
+}
+
+#screenshot {
+    width: 65%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#initial-website p {
+    margin: 3vh 10vw;
+}
+
+#findings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#usability {
+    width: 40%;
+    margin-right: 2vw;
+}
+
+#accessibility {
+    margin-left: 2vw;
+    width: 30%;
+}
+
+#prototypes {
+    text-align: center;
+}
+
+#prototypes p {
+    margin: 2vh 15vw;
+    background-color: #FFFFFF;
+    padding: 3vh 3vw;
+    border-radius: 10px;
+}
+
+#lofi-prototypes, #hifi-prototypes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lofi-prototypes img {
+    width: 70%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+#hifi-prototypes img {
+    width: 70%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#style-guide {
+    width: 45%;
+}
+
+#redesign-page p {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 20vh;
+}

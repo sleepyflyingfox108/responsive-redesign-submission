@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>HW 2</title>
+</head>
+<body>
+    <h1>
+            HW 2: Responsive Redesign
+    </h1>
+    
+    <h2><span>Intro</span></h2>
+    
+    <div id="intro">
+        <p><b>This assignment</b> was to take a page, identify its usability pitfalls, and redesign it with those in mind. It also walked us through the lo-fi and hi-fi prototyping process.</p>
+    </div>
+    
+    <div id="initial-website">
+        <img id="screenshot" src="assets/screenshot.png">
+        <p>I chose this website, <a href="https://www.eastsideveterinary.com">Eastside Veterinary Clinic</a>, because while it’s generally simple, there’s a lot of different interactive elements (dropdown, embedded links, carousels) and odd creative choices (floating elements, different colored text) to redesign.</p>
+    </div>
+    
+    <h2><span>Intial Findings</span></h2>
+    
+    <div id="findings">
+        <div id="usability">
+            <h3>Usability</h3>
+            <b>Learnability</b> - <em>Is it easy to learn to use (new users)?</em> 
+            <br>
+            This website is simple to learn how to use - you scroll down like a single sheet of paper. In general, the website is plain, without much marking of hierarchy - there aren’t much sectioned off areas, headers, etc. This doesn’t make it immediately clear where to go for what info. This leads to <b>low-medium learnability.</b>
+            <br><br>
+            <b>Memorability</b> - <em>Is it easy to recall what to do (casual users)?</em> 
+            <br>
+            In some areas there are links scattered throughout, and images or elements floating without a clear position or hierarchy. It isn’t quite intuitive or matching of what someone would expect, which would essentially make a casual user have to remember the quirks of this site each time. This leads to <b>low memorability.</b>
+            <br><br>
+            <b>Efficiency</b> - <em>Can typical tasks be done quickly (frequent users)?</em> 
+            <br>
+            Generally, the website is simple and if someone knows where to go, it would be very quick to navigate to that section. So it is <b>highly efficient</b> in this sense.
+            <br><br>
+            <b>Conceptual Model</b> - <em>How a user expects it to work</em>
+            <br>
+            The conceptual model of this website, at first, seems like a “table of contents” with a scrollable page, almost like a plain sheet of paper. However, it gets confusing since there are repeated links scattered throughout, and it suddenly splits into three columns at the footer, which is not marked by any sort of indicator.
+            
+        </div>
+        <div id="accessibility">
+            <h3>Accessibility</h3>
+            <b>Underlined non-links</b> - WebAIM noted that in some areas, the text is underlined even though it is not a link. Almost universally, underlined text represents links online so this should be avoided to curb misunderstanding.
+            <br><br>
+            <b>Poor visibility</b> - There are areas where text is light green or red against a white backgrouund. WebAIM noted that this leads to poor visibility because contrast is low.
+            <br><br>
+            <b>No page regions</b> - WebAIM noted that there is a lack of general page regions. There is not much use of headers, and no “header one” for ARIA purposes.
+            <br><br>
+            I do agree with these findings and find they overlap a lot with the general usability problems I noted with usability, the biggest problem being a lack of clear info hierarchy / separation.
+        </div>
+    </div>
+    
+    <div id="prototypes">
+        <h2><span>Prototypes</span></h2>
+        <p><b>Note:</b> I separated the annotations for the wireframes across the three of them to make them less crowded and avoid repetitions. So most of them apply to all three, unless explicitly noted as a <b>change.</b></p>
+        <div id="lofi-prototypes">
+            <h3>Lo-Fi Prototypes</h3>
+            <p>The large things I tried to target with lo-fi prototypes was hierarchy - I made use of background colors, headers, and clear column organizations to make info hierarchies clear.</p>
+            <h4>Desktop</h4>
+            <img src="assets/Desktop.png">
+            <h4>Tablet</h4>
+            <img src="assets/Tablet.png">
+            <h4>Phone</h4>
+            <img src="assets/Phone.png">
+        </div>
+        
+        <div id="style">
+            <h3>Style Guide</h3>
+            <img id="style-guide" src="assets/style-guide.png">
+        </div>
+        
+        <div id="hifi-prototypes">
+            <h3>Hi-Fi Prototypes</h3>
+            <p>With hi-fi prototypes, I largely consolidated creative color and font choices, as well as differences between the sizes. I chose a serif font for general body text (Quattrocento), a sans serif font for navigational / meta info (Quattrocento Sans), and a simple sans serif font for headers (Alata).</p>
+            <h4>Desktop</h4>
+            <img src="assets/hi-fi-desktop.png">
+            <h4>Tablet</h4>
+            <img src="assets/hi-fi-tablet.png">
+            <h4>Phone</h4>
+            <img src="assets/hi-fi-phone.png">
+        </div>
+    </div>
+    
+    <div id="redesign-page">
+        <h2><span>Redesigned Page</span></h2>
+        <p> Here is the <a href="https://sleepyflyingfox108.github.io/responsive-redesign/">link to my redesigned page</a>! (Also a <a href="https://www.eastsideveterinary.com">link to the old original</a>.)
+        <br><br>
+        <b>Some things to note:</b> the carousel was a bit tricky to edit and navigate as it is quite a complicated class with JavaScript involved. Bootstrap's carousel is meant for images, so I uploaded reviews as images, which causes them to shrink extremely small when on a phone. Ideally, I would fix this going forward!</p>
+    </div>
+    
+</body>
+</html>
